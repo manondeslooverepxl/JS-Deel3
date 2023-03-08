@@ -133,14 +133,14 @@ alert("Je bent geboren op een" + geboortedatumISO + ".");
 
 
 let teller = 0;
-let maaltafel = parseInt( prompt("Geef een getal tussen 1 en 10 voor de bijhorende maaltafels te krijgen");
+let maaltafel = parseInt(prompt("Geef een getal tussen 1 en 10 voor de bijhorende maaltafels te krijgen."));
 let maaltafelUitkomst;
 let uitkomst = "";
 
 while (teller < 10) {
     teller++;
     maaltafelUitkomst = teller * maaltafel;
-    uitkomst = uitkomst + teller + "x" + maaltafel + "=" maaltafelUitkomst + "<br>";
+    uitkomst = uitkomst + teller + "x" + maaltafel + "=" + maaltafelUitkomst + "<br>";
 }
 
 document.getElementById("uitkomst").innerHTML = uitkomst;
