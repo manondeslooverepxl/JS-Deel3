@@ -90,7 +90,8 @@ alert("Het is vandaag" + dag + ".");
 */
 
 
-// Vijfde opdracht
+// Vijfde voorbeeld
+
 /*
 let geboortedatumingave = prompt("Geef uw geboortedatum in", "DD-MM-JJJJ")
 let dagingave = geboortedatumingave.substring(0, 2);
@@ -130,7 +131,9 @@ switch (geboortedatumISO.getDay()) {
 alert("Je bent geboren op een" + geboortedatumISO + ".");
 */
 
+/*
 
+// Zesde voorbeeld
 
 let teller = 0;
 let maaltafel = parseInt(prompt("Geef een getal tussen 1 en 10 voor de bijhorende maaltafels te krijgen."));
@@ -143,4 +146,46 @@ while (teller < 10) {
     uitkomst = uitkomst + teller + "x" + maaltafel + "=" + maaltafelUitkomst + "<br>";
 }
 
+document.getElementById("uitkomst").innerHTML = uitkomst;
+
+*/
+
+// Zevende voorbeeld
+
+/*
+let teller = 0;
+let maaltafel = parseInt(prompt("Geef een getal tussen 1 en 10 voor de bijhorende maaltafels te krijgen."));
+let maaltafelUitkomst;
+let uitkomst = "";
+
+do {
+    teller++;
+    maaltafelUitkomst = teller + maaltafel;
+    uitkomst = uitkomst + teller + "x" + maaltafel + "=" + maaltafelUitkomst + "<br>";
+}
+
+while (teller <10);
+
+document.getElementById("uitkomst").innerHTML = uitkomst;
+*/
+
+// Achtste voorbeeld
+/*
+let uitkomst = "";
+for(let teller = 1; teller <= 10; teller++) {
+    uitkomst = uitkomst + "De teller staat op" + teller + ".<br>";
+}
+document.getElementById("uitkomst").innerHTML = uitkomst;
+
+*/
+// Negende voorbeeld
+
+let uitkomst = "";
+let maaltafel = parseInt(prompt("Geef een getal tussen 1 en 10 voor de bijhorende maaltafels te krijgen."));
+let maaltafelUitkomst;
+
+for(let teller = 1; teller <= 10; teller++) {
+    maaltafelUitkomst = teller * maaltafel;
+    maaltafelUitkomst = uitkomst + "De teller staat op" + teller + ".<br>";
+}
 document.getElementById("uitkomst").innerHTML = uitkomst;
