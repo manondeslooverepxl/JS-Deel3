@@ -1,5 +1,5 @@
-/* Eerste Voorbeeld
-
+// Eerste Voorbeeld
+/*
 let leeftijd = parseInt (prompt ( "Geef je leeftijd in."));
 
 if (leeftijd <= 12) {
@@ -9,6 +9,9 @@ else {
     alert("Je krijgt geen Happy Meal, sorry!")
 }
 */
+
+
+
 
 // Tweede Voorbeeld
 /*
@@ -28,6 +31,8 @@ else {
     document.getElementById("uitkomst").innerHTML = "Je moet nog even sparen ..."
 }
 */
+
+
 
 
 
@@ -54,6 +59,8 @@ else {
             document.getElementById("uitkomst").innerHTML = "Je moet nog even sparen ..."
 }
 */
+
+
 
 
 
@@ -88,6 +95,10 @@ switch (new Date().getDay()) {
 alert("Het is vandaag" + dag + ".");
 
 */
+
+
+
+
 
 
 // Vijfde voorbeeld
@@ -133,6 +144,11 @@ alert("Je bent geboren op een" + geboortedatumISO + ".");
 
 /*
 
+
+
+
+
+
 // Zesde voorbeeld
 
 let teller = 0;
@@ -149,6 +165,11 @@ while (teller < 10) {
 document.getElementById("uitkomst").innerHTML = uitkomst;
 
 */
+
+
+
+
+
 
 // Zevende voorbeeld
 
@@ -169,6 +190,11 @@ while (teller <10);
 document.getElementById("uitkomst").innerHTML = uitkomst;
 */
 
+
+
+
+
+
 // Achtste voorbeeld
 /*
 let uitkomst = "";
@@ -178,9 +204,16 @@ for(let teller = 1; teller <= 10; teller++) {
 document.getElementById("uitkomst").innerHTML = uitkomst;
 
 */
+
+
+
+
+
 // Negende voorbeeld
 
+/*
 let uitkomst = "";
+ /*
 let maaltafel = parseInt(prompt("Geef een getal tussen 1 en 10 voor de bijhorende maaltafels te krijgen."));
 let maaltafelUitkomst;
 
@@ -189,3 +222,80 @@ for(let teller = 1; teller <= 10; teller++) {
     maaltafelUitkomst = uitkomst + "De teller staat op" + teller + ".<br>";
 }
 document.getElementById("uitkomst").innerHTML = uitkomst;
+*/
+
+
+
+
+// Tiende voorbeeld
+
+// let werkdagen = new Array ()
+
+/* let werkdagen = [];
+
+werkdagen[0] = "maandag";
+werkdagen[1] = "dinsdag";
+werkdagen[2] = "woensdag";
+werkdagen[3] = "donderdag";
+werkdagen[4] = "vrijdag";
+
+*/
+
+
+
+
+// Elfde voorbeeld
+/*
+let werkdagen = ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag"];
+let uitkomst = "";
+
+for (let teller = 0; teller < werkdagen.length; teller++){
+    uitkomst += werkdagen [teller] + "<br>";
+}
+
+document.getElementById("uitkomst").innerHTML = uitkomst;
+
+ */
+
+
+
+
+// Twaalfde Voorbeeld
+/*
+// Join - van een array met meerdere waardes naar string
+//Join - van een array met meerdere waardes naar een string
+let werkdagen = ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag"];
+console.log(werkdagen.join(" - "))
+
+//Split - van een string naar een array met meerdere waardes
+let werkdagenZin = "maandag - dinsdag - woensdag - donderdag - vrijdag";
+console.log(werkdagenZin.split(" - "));
+
+// Sort - sorteren van een waarde in een array van A (hoofdletter) naar z (kleine letter)
+let werkdagen = ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag"];
+console.log(werkdagen.sort());
+
+// Reverse - De volgorde van de waardes in de array omdraaien
+let werkdagen = ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag"];
+console.log(werkdagen.reverse());
+
+// Push - 1 of meerdere waardes aan het einde van de array toevoegen
+let werkdagen = ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag"];
+console.log(werkdagen.push("zaterdag", "zondag"));
+console.log(werkdagen);
+
+// pop - 1 waarde aan het begin van de array verwijderen
+// pop = verwijdert het laatste element van een array
+let werkdagen = ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag"];
+ console.log(werkdagen.pop());
+
+// shift - 1 waarde aan het begin van de array verwijderen, tonen als output en daarna weg
+let werkdagen = ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag"];
+console.log(werkdagen.shift());
+
+// concat - twee arrays samenvoegen tot 1 array
+let werkdagen = ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag"];
+let weekenddagen  = ["zaterdag", "zondag"]
+let alleDagen = werkdagen.concat(weekenddagen);
+console.log(alleDagen);
+ */
